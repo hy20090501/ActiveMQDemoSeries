@@ -15,7 +15,7 @@ public class UserController {
     @Resource  
     private UserService userService;  
 
-    @RequestMapping("/")    
+    @RequestMapping("/view")    
     public ModelAndView getIndex(){      
         ModelAndView mav = new ModelAndView("index");   
         User user = userService.getUserById((long) 1);

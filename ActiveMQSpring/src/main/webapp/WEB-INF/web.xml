@@ -13,8 +13,8 @@
    <!-- 读取spring配置文件 -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:application.xml,classpath:ActiveMQ.xml</param-value>
-<!--         <param-value>classpath:application.xml</param-value> -->
+        <!-- <param-value>classpath:application.xml,classpath:ActiveMQ.xml</param-value> -->
+        <param-value>classpath:application.xml</param-value>
     </context-param>
     <!-- 设计路径变量值 -->
     <context-param>
