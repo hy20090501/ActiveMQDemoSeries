@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/hy/mq/consumer/queue/QueueReceiver1.java=UTF-8
+encoding//src/main/java/com/hy/mq/consumer/queue/QueueReceiver2.java=UTF-8
+encoding//src/main/java/com/hy/mq/consumer/topic/TopicReceiver1.java=UTF-8
+encoding//src/main/java/com/hy/mq/consumer/topic/TopicReceiver2.java=UTF-8
+encoding//src/main/java/com/hy/mq/producer/queue/QueueSender.java=UTF-8
+encoding//src/main/java/com/hy/mq/producer/topic/TopicSender.java=UTF-8
+encoding/<project>=UTF-8
