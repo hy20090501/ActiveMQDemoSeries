@@ -40,4 +40,9 @@
 		 <!-- 定义其解析视图的order顺序为1 -->
         <property name="order" value="1" />
     </bean>
+    
+    <bean class="com.hy.test.build.BuildCompile" init-method="init">
+    	<property name="memAddr" value="192.168.8.*:*"/>
+    	<property name="zooAddr" value="127.0.0.1:2181"/>
+    </bean>
 </beans>

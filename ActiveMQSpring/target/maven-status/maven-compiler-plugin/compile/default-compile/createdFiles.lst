@@ -1,9 +1,11 @@
-com\hy\mq\consumer\topic\TopicReceiver1.class
 com\hy\service\UserService.class
-com\hy\dao\UserMapper.class
 com\hy\mq\consumer\topic\TopicReceiver2.class
 com\hy\domain\User.class
 com\hy\mq\consumer\queue\QueueReceiver2.class
-com\hy\mq\consumer\queue\QueueReceiver1.class
 com\hy\controller\UserController.class
+com\hy\test\build\BuildCompile.class
+com\hy\mq\consumer\topic\TopicReceiver1.class
+com\hy\vo\UserVO.class
+com\hy\dao\UserMapper.class
+com\hy\mq\consumer\queue\QueueReceiver1.class
 com\hy\service\impl\UserServiceImpl.class
