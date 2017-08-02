@@ -149,7 +149,7 @@
 	  	
 	<build>
 		<defaultGoal>compile</defaultGoal>
-		<finalName>leaf_manager_web</finalName>
+		<finalName>ActiveMQSpring</finalName>
 		<filters>
             <filter>src/main/resources/configs/web-config-${env}.properties</filter>
         </filters>
