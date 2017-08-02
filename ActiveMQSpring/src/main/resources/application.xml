@@ -64,4 +64,11 @@
 	<!-- 自动扫描注解的bean,只扫描Service. 把Controller排除在外,Controller由spring-mvc.xml去加载-->
 	<context:component-scan base-package="com.hy.service" />
 	<!-- <context:component-scan base-package="com.hy.mq" /> -->
+	
+	
+	
+	<bean id="buildCompileBean" class="com.hy.test.build.BuildCompile" init-method="init">
+    	<property name="memAddr" value="${memcached.server.address}"/>
+    	<property name="zooAddr" value="${zookeeper.address}"/>
+    </bean>
 </beans>

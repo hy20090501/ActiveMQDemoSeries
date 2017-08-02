@@ -2,6 +2,8 @@ package com.hy.controller;
 
 import javax.annotation.Resource;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,9 +24,12 @@ public class MethodController {
     @RequestMapping(value = "/{name}", method = RequestMethod.GET)  
     @ResponseBody  
     public User findUserById(@PathVariable("name") String name) {  
-    	BuildCompile temp = new BuildCompile();
-//    	System.out.println("memcache address: " + temp.getMemAddr());
-    	System.out.println("zookeeper address: " + BuildCompile.zooAddr);
+    	ApplicationContext ac = new ClassPathXmlApplicationContext("application.xml");  
+        //获取容器的一个实例  
+    	BuildCompile buildCompile = (BuildCompile) ac.getBean("buildCompileBean");  
+        System.out.println("memcache address: " + buildCompile.getMemAddr());  
+    	System.out.println("zookeeper address: " + buildCompile.getZooAddr());
+    	buildCompile.printMemAddr();
     	User user = userService.getUserById((long) 1);
 		return user;
     }  

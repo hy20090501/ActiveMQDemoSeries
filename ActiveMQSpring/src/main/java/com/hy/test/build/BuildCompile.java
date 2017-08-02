@@ -2,7 +2,7 @@ package com.hy.test.build;
 
 public class BuildCompile {
 	private String memAddr;
-	public static String zooAddr;
+	private  String zooAddr;
 
 	public String getMemAddr() {
 		return memAddr;
@@ -12,15 +12,19 @@ public class BuildCompile {
 		this.memAddr = memAddr;
 	}
 
-	public static String getZooAddr() {
+	public String getZooAddr() {
 		return zooAddr;
 	}
 
-	public static void setZooAddr(String zooAddr) {
-		BuildCompile.zooAddr = zooAddr;
+	public void setZooAddr(String zooAddr) {
+		this.zooAddr = zooAddr;
 	}
 
 	public void init() {
 		System.out.println("memcache地址：" + memAddr);
+	}
+	
+	public void printMemAddr() {
+		System.out.println("memAddr:" + memAddr);
 	}
 }
